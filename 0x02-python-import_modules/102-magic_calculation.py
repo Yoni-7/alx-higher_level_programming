@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-def complex_delete(my_dict, value):
-    keys_to_del = []
-    for key in my_dict:
-        if my_dict[key] == value:
-            keys_to_del.append(key)
-    for key in keys_to_del:
-        del my_dict[key]
-    return my_dict
+
+def magic_calculation(a, b):
+    """Match bytecode provided by Holberton School."""
+    from magic_calculation_102 import add, sub
+
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return (c)
+
+    else:
+        return(sub(a, b))
